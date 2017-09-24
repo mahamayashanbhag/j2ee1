@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" 
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="default" extends="struts-default" >
+		<action name="BookACar" class="com.abc.carrental.actions.BookACarAction" >
+			<result name="success">Thankyou.jsp</result>
+			 <result name="failure">Error.jsp</result>
+			 <result name="input">BookACar.jsp</result>
+  		</action>
+  		<action name="CancelACar" class="com.abc.carrental.actions.CancelACarAction" >
+			<result name="success">Success.jsp</result>
+			 <result name="failure">Error.jsp</result>
+  		</action>
+  </package>
+</struts>  
